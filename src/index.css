@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;850&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --color-primary-bg: #F8FAFC;
+  --color-secondary-bg: #F1F5F9;
+  --color-card-bg: #ffffff;
+  --color-card-border: rgba(0, 0, 0, 0.08);
+  --color-text-title: #0f172a;
+  --color-text-body: #475569;
+  --color-input-bg: #ffffff;
+  --color-input-border: #e2e8f0;
+  --color-shadow-modifier: rgba(148, 163, 184, 0.05);
+}
+
+.dark {
+  --color-primary-bg: #0D1224;
+  --color-secondary-bg: #0A0D1A;
+  --color-card-bg: rgba(255, 255, 255, 0.015);
+  --color-card-border: rgba(255, 255, 255, 0.05);
+  --color-text-title: #ffffff;
+  --color-text-body: #a1a1aa;
+  --color-input-bg: rgba(0, 0, 0, 0.45);
+  --color-input-border: rgba(255, 255, 255, 0.1);
+  --color-shadow-modifier: rgba(0, 0, 0, 0.3);
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-site-bg: var(--color-primary-bg);
+  --color-site-sec-bg: var(--color-secondary-bg);
+  --color-site-card-bg: var(--color-card-bg);
+  --color-site-card-border: var(--color-card-border);
+  --color-site-title: var(--color-text-title);
+  --color-site-body: var(--color-text-body);
+  --color-site-input-bg: var(--color-input-bg);
+  --color-site-input-border: var(--color-input-border);
+}
+
+/* Custom fade-in and premium micro-interactions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97) translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Dorex Courier & Logistics",
+  "description": "Premium courier and logistics company website featuring interactive tracking, shipping calculator, dynamic delivery timeline, mock live tracking map, and AI-powered shipping helper.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
